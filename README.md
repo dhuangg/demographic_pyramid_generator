@@ -1,5 +1,5 @@
 # CA100 Demographic Pyramid Generator
-This is a project to generate visualizations specifically for [California 100](https://california100.org/)'s regional reports. We will create 9 regional demographic pyramid visualizations using the latest year from the US Census (ACS5) data.
+This is a project to generate visualizations specifically for [California 100](https://california100.org/)'s regional reports. We will create 9 regional demographic pyramid visualizations using the latest year from the US Census (ACS5) data (2020).
 
 ## Demographic Pyramid
 A [population pyramid](https://en.wikipedia.org/wiki/Population_pyramid) is a common socioeconomic data visualization to understand the age and gender distribution of a geographic region.
