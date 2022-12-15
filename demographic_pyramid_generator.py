@@ -130,13 +130,13 @@ ETH_CODES_DICT = {
 ETH_COLOR_CODES_DICT = {
     'A': '#1abc9c',
     'B': '#f1c40f',
-    'C': '#2ecc71',
+    'C': '#95a5a6',
     'D': '#e67e22',
     'E': '#3498db',
     'F': '#e74c3c',
     'G': '#fd79a8',
     'H': '#34495e',
-    'I': '#95a5a6',
+    'I': '#2ecc71',
 }
 
 # Identify columns by age brackets
@@ -308,6 +308,7 @@ for code in census_codes_list:
 for remove_code in codes_to_remove:
     census_codes_list.remove(remove_code)
 
+
 # Generate Regional Age Pyramid
 def regional_age_pyramid(region):
     fig, axes = plt.subplots(figsize=(12,6.5), facecolor='#eaeaf2', ncols=2, sharey=True)
@@ -334,8 +335,8 @@ def regional_age_pyramid(region):
 
     # Set Titles
     fig.suptitle(region + ' Demographic Pyramid')
-    axes[0].set_title('Men Population', fontsize=18, pad=15, zorder=10)
-    axes[1].set_title('Women Population', fontsize=18, pad=15, zorder=10)
+    axes[0].set_title('Male', fontsize=18, pad=15, zorder=10)
+    axes[1].set_title('Female', fontsize=18, pad=15, zorder=10)
 
     # Editing ticks
     axes[0].set(yticks=list(range(0,len(AGE_RANGES))), yticklabels=AGE_RANGES)
